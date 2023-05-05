@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Information Request Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <header>
+        <h1>
+            Harrow
+        </h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#clinical">Clinical</a>
+                </li>
+                <li>
+                    <a href="#iit">IIT</a>
+                </li>
+                <li>
+                    <a href="#mir">MIR</a>
+                </li>
+                <li>
+                    <a href="#charity">Charity</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="HIRF-form">
+        <h2>
+            Medical Information Request Form
+        </h2>
+        <form class="form1">
+        
+            <h3 class="section1">
+                Contact Information of Requesting Healthcare Professional
+            </h3>
+
+            <label for="healthcare-name">Name of Requesting Healthcare Professional:</label>
+            <input type="text" name="healthcare-name" id="healthname" placeholder="Name" class="form-input">
+            <label for="practice-name">Institution Name/Practice Name</label>
+            <input type="text" name="practice-name" id="practicename" class="form-input">
+
+            <select name="">
+                <option value="option1">Type of HCP</option>
+                <option value="option2">MD</option>
+                <option value="option3">OD</option>
+                <option value="option4">DO</option>
+                <option value="option5">Ph.D</option>
+                <option value="option6">R.Ph</option>
+                <option value="option7">R.N.</option>
+                <option value="option8">PharmD</option>
+                <option value="option9">Other</option>
+            </select>
+
+            <label for="location">City, State, ZIP:</label>
+            <input type="text" name="location" id="area" class="form-input">
+            <label for="mobile">Telephone Number (with area code):</label>
+            <input type="text" name="telephone" id="mobile" class="form-input">
+            <label for="contact-time">Best Time to Contact (if phone):</label>
+            <input type="text" name="contact-time" id="contact" class="form-input">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email-input" class="form-input">
+
+            <p>Preferred Method of Response:</p>
+            <select name="">
+                <option value="option1">Please Select</option>
+                <option value="option2">Phone</option>
+                <option value="option3">Email</option>
+                <option value="option4">MSL Visit Requested</option>
+        </form>
+
+        <form class="form2">
+
+            <h3 class="section2">
+                Medical Inquiry
+            </h3>
+
+            <textarea name="inquiry" rows="10" cols="30"></textarea>
+            <textarea name="message" rows="6" cols="15" class="text1">
+                Request Not Valid Without Healthcare Professional’s Acknowledgement Below:
+                By clicking the acknowledgement, I hereby confirm that the medical information requested was at my
+                initiation, as a healthcare provider, and not solicited in any manner by an ImprimisRx/Harrow representative.
+                I also certify that the information provided will not be shared with other parties. The wording above accurately
+                reflects the medical information I hereby request to be provided to me by ImprimisRx/Harrow.
+            </textarea>
+            <label for="signature">Healthcare Professional’s Signature:</label>
+            <input type="text" name="signature" id="signature" class="form-input">
+            <label for="date">Date:</label>
+            <input type="text" name="date" id="signature-date" class="form-input">
+            <input="button" type="submit"
+        </form>
+
+    </div>
+    
+</body>
+</html>

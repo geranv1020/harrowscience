@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto' , sans-serif;
+}
+
+header {
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav a {
+    text-decoration: none!important;
+    color: darkblue;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0 40px 0;
+    color: #293b97;
+    font-size: 40px;
+}
+
+.HIRF-form {
+    font-size: 20px;
+}
+
+.form1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 800px;
+    justify-content: center;
+}
+
+h3 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+    font-size: 27px;
+    color: #293b97
+}
+
+.section1 {
+    margin-bottom: 20px;
+}
+
+.form2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 800px;
+    justify-content: center;
+}
+
+.section2 {
+    margin: 20px 0 20px 0;;
+}
+
+input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: gray;
+}
+textarea {
+    width: 800px;
+    margin: 5px;
+}
+
+.text1 {
+    text-align: left;
+}
