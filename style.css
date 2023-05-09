@@ -40,7 +40,7 @@ header nav ul {
     list-style: none;
 }
 
-header nav ul li a {
+header nav li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
@@ -57,15 +57,12 @@ h2 {
 }
 
 .HIRF-form {
-    font-size: 20px;
-}
-
-.form1 {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    width: 800px;
     justify-content: center;
+    width: 70%;
+    font-size: 17px;
 }
 
 h3 {
@@ -81,28 +78,57 @@ h3 {
     margin-bottom: 20px;
 }
 
-.form2 {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    width: 800px;
-    justify-content: center;
-}
 
 .section2 {
     margin: 20px 0 20px 0;;
 }
 
-input {
+.form-input {
     outline: 0;
     border-width: 0 0 2px;
     border-color: gray;
-}
-textarea {
-    width: 800px;
-    margin: 5px;
+    padding: 10px;
+    width: 80%;
 }
 
-.text1 {
-    text-align: left;
+select {
+    background: linear-gradient(rgb(223, 216, 216), rgb(163, 154, 154));
+    color: black;
+    border-width: 0 0 2px;
+    border-color: gray;
+    padding: 10px;
+    border-radius: 2px;
+    width: 80%;
+}
+
+textarea {
+    resize: none;
+    border-style: 1px solid grey;
+    border-radius: 2px;
+    width: 100%;
+}
+
+p {
+    border: 1px solid grey;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.sig-input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: gray;
+    padding: 10px;
+    width: 100%;
+}
+
+.btn {
+    background: linear-gradient(rgb(235, 255, 56), rgb(255, 223, 17));
+    color: #293b97;
+    font-weight: bolder;
+    padding: 10px;
+    margin: 10px;
+    height: 59px;
+    width: 30%;
+    justify-content: center;
 }
