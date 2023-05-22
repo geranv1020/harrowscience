@@ -31,7 +31,7 @@
             <h3 class="section1">
                 Contact Information of Requesting Healthcare Professional
             </h3>
-            <div class="row g-3">
+            <div class="row g-3 input-control">
                 <div class="col-md-6">
                     <label for="healthcare-name"></label>
                     <input type="text" name="healthcare-name" id="healthname" placeholder="Name of Requesting Healthcare Professional" width="30px" class="form-input">
@@ -40,7 +40,7 @@
                     <label for="practice-name"></label>
                     <input type="text" name="practice-name" placeholder="Institution Name/Practice Name" id="practicename" class="form-input">
                 </div>
-            <div class="row g-3">
+            <div class="row g-3 input-control">
                 <div class="col-md-6">
                     <select name="HCP">
                     <option value="option1">Type of HCP</option>
@@ -59,27 +59,27 @@
                         <input type="text" name="location" id="area" placeholder="City" class="form-input">
                     </div>
             </div>
-            <div class="row g-3">
+            <div class="row g-3 input-control">
                 <div class="col-md-6">
                     <label for="state"></label>
                     <input type="text"  placeholder="State" name="state" id="state" class="form-input">
                 </div>
                 <div class="col-md-6">
                     <label for="zip"></label>
-                    <input type="text" name="zip" placeholder="ZIP" id="zip" class="form-input">
+                    <input type="number" name="zip" placeholder="ZIP" id="zip" class="form-input">
                 </div>
             </div>
-            <div class="row g-3">
+            <div class="row g-3 input-control">
                 <div class="col-md-6">
                     <label for="mobile"></label>
-                    <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone Number (XXX-XXX-XXXX)" name="telephone" id="mobile" class="form-input">
+                    <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone Number (XXX-XXX-XXXX)" name="phone" id="phone" class="form-input">
                 </div>
                 <div class="col-md-6">
                     <label for="contact-time"></label>
                     <input type="text" name="contact-time" placeholder="Best Time to Contact" id="contact" class="form-input">
                 </div>
             </div>
-            <div class="row g-3">
+            <div class="row g-3 input-control">
                 <div class="col-md-6">
                     <label for="email"></label>
                     <input type="text" name="email" placeholder="Email" id="email-input" class="form-input">
@@ -125,7 +125,9 @@ By clicking the acknowledgement hereby confirm that the medical information requ
             </div>
             <div class="">
                 <div class="justify-content-center">
-                    <input type="submit" value="Submit" class="btn"/>
+                    <button onclick="sendMail(); return false" type="submit" value="Submit" class="btn">
+                        submit
+                    </button>
                 </div>
             </div>
         </form>
