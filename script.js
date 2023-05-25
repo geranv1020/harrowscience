@@ -73,7 +73,7 @@ const validateInputs = () => {
     }
 
     if(cityValue === '') {
-        setError(city, 'city is required');
+        setError(city, 'City is required');
     } else {
         setSuccess(city);
     }
