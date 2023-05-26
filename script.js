@@ -119,8 +119,8 @@ const validateInputs = () => {
 }
 
 function sendMail() {
-    var link = "mailto:rcostine@harrowinc.com"
-             + "?cc=myCCrcostine@harrowinc.com"
+    var link = "mailto:gvanatta@harrowinc.com"
+             + "?cc=myCCgvanatta@harrowinc.com"
              + "&subject=" + encodeURIComponent("This is my subject")
              + "&body=" + encodeURIComponent(document.getElementById('myText').value)
     ;
