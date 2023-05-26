@@ -117,6 +117,10 @@ textarea {
     padding: 5px;
 }
 
+.approved {
+    margin-top: 45px;
+}
+
 .sig-input {
     outline: 0;
     border-width: 0 0 2px;
