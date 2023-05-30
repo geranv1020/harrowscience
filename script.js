@@ -10,7 +10,7 @@ const contactTime = document.getElementById('contactTime');
 const email = document.getElementById('email');
 const response = document.getElementById('response');
 
-myForm.addEventListener("submit", (e) => {
+form.addEventListener("submit", (e) => {
     e.preventDefault();
 
     validateInputs();
@@ -24,16 +24,16 @@ const setError = (element, message) => {
     const errorDisplay = inputControl.querySelector('.error');
 
     errorDisplay.innerText = message;
-    inputControl.classlist.add('error');
-    inputControl.classlist.remove('success');
+    inputControl.classList.add('error');
+    inputControl.classList.remove('success');
 }
  const setSuccess = element => {
     const inputControl = element.parentElement;
     const errorDisplay = inputControl.querySelector('.error');
 
     errorDisplay.innerText = '';
-    inputControl.classlist.add('success');
-    inputControl.classlist.remove('error');
+    inputControl.classList.add('success');
+    inputControl.classList.remove('error');
 };
 
 const isValidEmail = email => {
@@ -108,6 +108,8 @@ const validateInputs = () => {
         setError(email, 'Provide a valid email address');
     } else {
         setSuccess(email);
+
+        console.log("Hello world!");
     }
 
     if( responseValue === '') {
