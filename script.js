@@ -10,15 +10,6 @@ const contactTime = document.getElementById('contactTime');
 const email = document.getElementById('email');
 const response = document.getElementById('response');
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    validateInputs();
-    //const request = new XMLHttpRequest();
-
-    //request.open("post", "index.html")
-});
-
 const setError = (element, message) => {
     const inputControl = element.parentElement;
     const errorDisplay = inputControl.querySelector('.error');
@@ -42,17 +33,14 @@ const isValidEmail = email => {
 }
 
 const validateInputs = () => {
-    const formValue = formValue.value.trim();
-    const profNameValue = profNameValue.value.trim();
-    const instNameValue = instNameValue.value.trim();
-    const hcpTypeValue = hcpTypeValue.value.trim();
-    const cityValue = cityValue.value.trim();
-    const stateValue = stateValue.value.trim();
-    const zipValue = zipValue.value.trim();
-    const phoneValue = phoneValue.value.trim();
-    const contactTimeValue = contactTimeValue.value.trim();
-    const emailValue = emailValue.value.trim();
-    const responseValue = responseValue.value.trim();
+    const profNameValue = profName.value.trim();
+    const instNameValue = instName.value.trim();
+    const cityValue = city.value.trim();
+    const stateValue = state.value.trim();
+    const zipValue = zip.value.trim();
+    const phoneValue = phone.value.trim();
+    const contactTimeValue = contactTime.value.trim();
+    const emailValue = email.value.trim();
 
     if(profNameValue === '') {
         setError(profName, 'Name of Healthcare Professional is required');
@@ -64,12 +52,6 @@ const validateInputs = () => {
         setError(instName, 'Institution/Practice Name is required');
     } else {
         setSuccess(instName);
-    }
-
-    if(hcpTypeValue === '') {
-        setError(hcpType, 'Type of HCP is required');
-    } else {
-        setSuccess(hcpType);
     }
 
     if(cityValue === '') {
@@ -111,23 +93,23 @@ const validateInputs = () => {
 
         console.log("Hello world!");
     }
-
-    if( responseValue === '') {
-        setError(response, 'Preferred Response Method is required');
-    } else {
-        setSuccess(response);
-    }
     
 }
 
-function sendMail() {
-    var link = "mailto:gvanatta@harrowinc.com"
-             + "?cc=myCCgvanatta@harrowinc.com"
-             + "&subject=" + encodeURIComponent("This is my subject")
-             + "&body=" + encodeURIComponent(document.getElementById('myText').value)
-    ;
+form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    validateInputs();
+});
+
+//function sendMail() {
+    //var link = "mailto:gvanatta@harrowinc.com"
+             //+ "?cc=myCCgvanatta@harrowinc.com"
+             //+ "&subject=" + encodeURIComponent("This is my subject")
+             //+ "&body=" + encodeURIComponent(document.getElementById('myText').value)
+    //;
     
-    window.location.href = link;
-}
+   // window.location.href = link;//
+//}
 
 
