@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Roboto' , sans-serif;
+    padding-bottom: 50px;
 }
 
 h2 {
@@ -53,7 +54,7 @@ select {
     border-color: gray;
     padding: 10px;
     border-radius: 2px;
-    width: 80%;
+    width: 82%;
     cursor: pointer;
 }
 
@@ -84,7 +85,7 @@ textarea {
     cursor: pointer;
 }
 
-.sig-input {
+.date {
     outline: 0;
     border-width: 0 0 2px;
     border-color: gray;
@@ -97,7 +98,7 @@ textarea {
     color: #293b97;
     font-weight: bolder;
     padding: 10px;
-    margin: 10px;
+    margin: 10 10 10 0px;
     height: 59px;
     width: 30%;
     justify-content: center;
