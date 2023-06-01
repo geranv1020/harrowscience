@@ -96,42 +96,4 @@ const validateInputs = () => {
     
 }
 
-//form.addEventListener('submit', e => {
-  //  e.preventDefault();
-
-  //  validateInputs();
-
-    //var name = document.getElementById('name').value;
-    //var emails = document.getElementById('emails').value;
-    //var subject = document.getElementById('subject').value;
-    //var message = document.getElementById('message').value;
-    //var body = 'name:' +name + '<br/> email: ' + email + '<br/> subject' +
-    //subject + '<br/> message' + message;
-
-    //Email.send({
-    //    Host : "smtp.elasticemail.com",
-      //  Username : "gvanatta@harrowinc.com",
-        //Password : "34CBA2BD80A7A88A5C241C9F0467AEBC8EDCFEFB5481BD9299A07943BB186469B7A9FB0F690A6A8C3F747565B1591A95",
-    //    To : 'gvanatta@harrowinc.com',
-      //  From : emails,
-        //Subject : subject,
-    //    Body : body
-    //}).then(
-      //message => alert(message)
-    //);
-//});
-
-
-
-
-//function sendMail() {
-    //var link = "mailto:gvanatta@harrowinc.com"
-             //+ "?cc=myCCgvanatta@harrowinc.com"
-             //+ "&subject=" + encodeURIComponent("This is my subject")
-             //+ "&body=" + encodeURIComponent(document.getElementById('myText').value)
-    //;
-    
-   // window.location.href = link;//
-//}
-
 
