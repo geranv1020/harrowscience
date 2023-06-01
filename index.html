@@ -18,7 +18,7 @@
         <h2>
             Medical Information Request Form
         </h2>
-        <form action="https://formsubmit.co/rcostine@harrowinc.com" method="POST" class="container justify-content-center px-4" id="form">
+        <form action="https://formsubmit.co/rcostine@harrowinc.com" method="POST" class="justify-content-center" id="form">
 
             <input type="hidden" name="_next" value="http://localhost:52330/submit.html">
         
@@ -26,23 +26,23 @@
                 Contact Information of Requesting Healthcare Professional
             </h3>
             <div class="row g-3 input-control">
-                <div class="col-md-6 input-control">
+                <div class="col input-control">
                     <label for="healthcare-name"></label>
-                    <input type="text" name="healthcare-name" id="profName" placeholder="Name of Requesting Healthcare Professional" width="30px" class="form-input">
+                    <input type="text" name="healthcare-name" id="profName" placeholder="Name of Requesting Healthcare Professional" class="form-input">
                     <div class="error"></div>
                 </div>
-                <div class="col-md-6 input-control">
+                <div class="col input-control">
                     <label for="practice-name"></label>
                     <input type="text" name="practice-name" placeholder="Institution Name/Practice Name" id="instName" class="form-input">
                     <div class="error"></div>
                 </div>
             <div class="row g-3 input-control">
-                <div class="col-md-6 input-control">
+                <div class="col input-control">
                     <label for="city"></label>
                     <input type="text" name="location" id="city" placeholder="City" class="form-input">
                     <div class="error"></div>
                 </div>
-                <div class="col-md-6 input-control">
+                <div class="col input-control">
                     <label for="state"></label>
                     <input type="text"  placeholder="State" name="state" id="state" class="form-input">
                     <div class="error"></div>
@@ -77,8 +77,8 @@
                     <select name="HCP">
                     <option value="option1">Type of HCP</option>
                     <option value="option2">MD</option>
-                    <option value="option3">OD</option>
                     <option value="option4">DO</option>
+                    <option value="option3">OD</option>
                     <option value="option5">Ph.D</option>
                     <option value="option6">R.Ph</option>
                     <option value="option7">R.N.</option>
